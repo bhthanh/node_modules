@@ -1,0 +1,40 @@
+{
+  "name": "PlandayCrossPlatformApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "adb-reverse": "adb reverse tcp:8081 tcp:8081",
+    "test": "jest --forceExit"
+  },
+  "dependencies": {
+    "react": "16.0.0-beta.5",
+    "react-native": "0.49.3",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.0.0-beta.15",
+    "react-redux": "^5.0.6",
+    "react-test-renderer": "16.0.0-beta.5",
+    "reduce-reducers": "^0.1.2",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/google.analytics": "0.0.39",
+    "@types/react": "^16.0.18",
+    "@types/react-native": "^0.49.3",
+    "@types/react-navigation": "^1.5.11",
+    "@types/react-redux": "^5.0.11",
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "prop-types": "^15.6.0",
+    "reselect": "^3.0.1",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
